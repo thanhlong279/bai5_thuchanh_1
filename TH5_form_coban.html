@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<! tao style ve fonr chu ap dung cho toan form>
+<style>
+    .wufoo {
+        font-family: "Lucida Grande","Lucida Sans Unicode", Tahoma, sans-serif;
+    }
+</style>
+<body>
+<form method="get" action="simpleform.html">
+    <h2>order form</h2>
+    <p>what would you like buy</p>
+    <select>
+        <! the select, option de tao danh sach drop-down >
+        <option value = " ">A</option>
+        <option>B (+0.5$)</option>
+        <option>C (+0.5$)</option>
+    </select>
+    <p>how many world you like to order?</p>
+    <! tao radio button: lua chon hang muc tu 1 d.sach >
+    <input type="radio" name="rd"/> 1 - $10 <br/>
+    <input type="radio" name="rd"/> 2 - $20 <br/>
+    <input type="radio" name="rd"/> 3 - $30 <br/>
+    <p>Name <span style="color: red">*</span> </p>
+    <! Tạo textfield: the input giup nguoi dung nhap thong tin vao. type ="text" >
+    <input type = "text" name="firstname" placeholder="FIRSTNAME" size="15"/>
+    <input type = "text" name="lastname" placeholder="LASTNAME" size="15"/>
+    <p>Email</p>
+    <input type = "text" name ="email" placeholder="EMAIL" size ="30"/>
+    <p> Phone Number</p>
+    <input type = "text" name ="phone 1" size ="10" />
+    <input type = "next" name ="phone 2" size ="10" />
+    <input type = "next" name ="phone 3" size ="10" />
+    <! tao button: hien thi 1 nut>
+    <p><input type = "button" name = "btSubmit" value="Submit"/></p>
+
+
+</form>
+</body>
+</html>
